@@ -8,7 +8,6 @@ export class Inspire {
     this.content = data.content
     this.author = data.author
     this.date = new Date()
-    // this.main = data['main']['temp'];
     this.main = data.main ? data.main.temp : null
     this.temperatureUnit = 'F'
   }
@@ -36,7 +35,4 @@ get temperature() {
   }
   return `${temp}°${this.temperatureUnit}`;
 }
-// toggleTemperatureUnit() {
-//   this.temperatureUnit = inspireService.toggleTemperatureUnit(this.temperatureUnit);
-// }
 }

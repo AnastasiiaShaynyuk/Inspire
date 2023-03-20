@@ -11,7 +11,6 @@ class ToDoService {
     console.log('creating to do', res.formData)
     const newToDo = new ToDo(res.data)
     appState.toDoes.push(newToDo)
-    // appState.toDoCount++
     appState.emit('toDoes')
   }
   async getToDoes() {
@@ -26,11 +25,6 @@ class ToDoService {
     toDo.completed = !toDo.completed
     const res = await sandboxApi.put(`anastasiia/todos/${toDoId}`, toDo)
     console.log('completed!', res.data)
-    // if (toDo.completed) {
-    //   appState.toDoCount--
-    // } else {
-    //   appState.toDoCount++
-    // }
     appState.emit('toDoes')
   }
   
