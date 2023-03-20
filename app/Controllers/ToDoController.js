@@ -60,8 +60,10 @@ export class ToDoController {
 
   async deleteToDo(toDoId) {
     try {
-      await toDoService.deleteToDo(toDoId);
-      Pop.confirm("Are you sure?");
+      // Pop.confirm("Are you sure?");
+      if (await Pop.confirm("Are you sure?")){
+        await toDoService.deleteToDo(toDoId);
+    }
     } catch (error) {
       console.error(error);
       Pop.error(error);
