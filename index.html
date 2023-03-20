@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="assets/img/3-2-abstract-png-pic.png">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css"
+    integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <title>Inspire</title>
+</head>
+
+<body>
+  <header class="container-fluid">
+
+    <!-- SECTION weather and to do here -->
+    <section class="row justify-content-between p-2">
+      <div class="col-1 text-center temp" id="weather"  >
+        <!-- <h1>☀️</h1> -->
+      </div>
+
+      <!-- STUB to do here -->
+      <div class="col-3 text-end pt-1">
+        <button type="button btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-light elevation-5 " ><span class="btnshadow">To Do List</span></button>
+        <!-- STUB modal here -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content bg-dark text-light">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">To Do: <span id="total">0</span> left</h5>
+                <button title="Close" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="modal-body ">
+                <section id="todos" class="row align-items-baseline">
+                  <!-- STUB list of todos -->
+                  <!-- <div class="col-1">
+                    <input type="checkbox">
+                  </div>
+                  <div class="col-8 text-start">
+                    <p>do something</p>
+                  </div>
+                  <div class="col-2">
+                    <i class="mdi mdi-delete fs-3"></i>
+                  </div> -->
+                </section>
+
+                <section class="row" id="form">
+                  <!-- <div class="col-12" >
+                  <form class="text-start" onsubmit="app.toDoController.createToDO()">
+                    <label for="add-to-do" class="py-2">Add To Do</label>
+                    <div class="d-flex flex-row">
+                      <input type="text" class="form-control inline-input" name="add-to-do" id="add-to-do">
+                      <button type="submit" class="btn btn-add btn-outline-dark"><i class="mdi mdi-plus"></i></button>
+                    </div>
+                  </form>
+                  </div> -->
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </header>
+  <main class="container-fluid">
+    <!-- SECTION clock here -->
+      <section class="row justify-content-center align-items-center" id="clock">
+        <div class="col-12 text-center text-white" id="clock" onload="currentTime()">
+          <!-- <H1>02:38 pm</H1> -->
+        </div>
+      </section>
+
+      <!-- SECTION quotes here -->
+      <section class="row text-center justify-content-center text-light " id="quote">
+
+        <!-- STUB quote here -->
+        <!-- <div class="col-12">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Author of Quote</p>
+        </div> -->
+
+      </section>
+
+  </main>
+  <!-- <footer class="bg-dark text-light">
+    <div class="text-center no-select">
+      <p><small>Made with 💖 by CodeWorks</small></p>
+    </div>
+  </footer> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"
+    integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
+  <script src="app/App.js" type="module"></script>
+</body>
+
+
+</html>

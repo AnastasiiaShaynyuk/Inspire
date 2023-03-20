@@ -1,0 +1,60 @@
+/* BASIC STYLES HERE */
+
+body {
+  background-size: cover;
+    background-position: center;
+}
+
+#clock {
+  min-height: 77vh;
+}
+
+.inline-input {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+
+.btn-add {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px
+}
+
+.btn-close {
+  background-color: white !important;
+}
+
+.quote:hover+.author {
+  visibility: visible;
+  opacity: 1;
+}
+.author {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity .5s linear;
+}
+
+.quote-text {
+  font-family: 'Playfair Display', serif;
+  font-size: larger;
+  font-weight: bold;
+  text-shadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
+}
+
+#clock {
+  color: #e9ecef;
+  font-size: 7em;
+  text-shadow: 2px 7px 7px rgba(0, 0, 0, 0.5),
+      0px -4px 13px rgba(255, 255, 255, 0.4);
+}
+
+.temp{
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 0;
+  text-shadow: 5px 4px 5px rgb(0, 0, 0, .5), 0 2px 3px rgb(0, 0, 0, .3);
+}
+
+.btnshadow {
+  font-weight: bolder;
+}
